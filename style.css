@@ -1,0 +1,217 @@
+/* Declaration des fonts */
+
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/font_roboto/Roboto-Regular-webfont.eot');
+    src: url('fonts/font_roboto/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/font_roboto/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('fonts/font_roboto/Roboto-Regular-webfont.woff') format('woff'),
+         url('fonts/font_roboto/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('fonts/font_roboto/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('fonts/font_roboto/Roboto-Thin-webfont.eot');
+    src: url('fonts/font_roboto/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/font_roboto/Roboto-Thin-webfont.woff2') format('woff2'),
+         url('fonts/font_roboto/Roboto-Thin-webfont.woff') format('woff'),
+         url('fonts/font_roboto/Roboto-Thin-webfont.ttf') format('truetype'),
+         url('fonts/font_roboto/Roboto-Thin-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotothin_italic';
+    src: url('fonts/font_roboto/Roboto-ThinItalic-webfont.eot');
+    src: url('fonts/font_roboto/Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/font_roboto/Roboto-ThinItalic-webfont.woff2') format('woff2'),
+         url('fonts/font_roboto/Roboto-ThinItalic-webfont.woff') format('woff'),
+         url('fonts/font_roboto/Roboto-ThinItalic-webfont.ttf') format('truetype'),
+         url('fonts/font_roboto/Roboto-ThinItalic-webfont.svg#robotothin_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ------------------- généralités ------------------- */
+body
+{
+	background-color: whitesmoke;
+    font-family: robotothin, Verdana, sans-serif;
+    margin: 0;
+}
+.main_wrapper
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section
+{
+    width:100%;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer
+{
+    background-color: slategrey;
+}
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------ Header ----------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+header
+{
+    margin: 0;
+    padding: 10px;
+    
+    width: 100%;
+    height: 155px;
+    
+    background-color: slategrey;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_logo{
+    margin-left: 5px;
+}
+.header_logo img
+{
+    height: 145px;
+    box-shadow: 5px 5px 30px black;
+}
+header h1
+{
+    color: whitesmoke;
+    text-shadow: 6px 6px 15px black;
+}
+
+#navigator
+{
+    box-shadow: 5px 5px 30px black; 
+    background-color: whitesmoke;
+
+    margin-right: 10px;
+
+    display: flex;
+}
+
+#navigator a
+{
+    text-decoration : none;
+    color : whitesmoke;
+}
+
+.btn_nav
+{
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin: 5px;
+    
+    background-color: slategrey;
+    /*  ----   animation   ---   */   
+    transition: background-color 1s, width 0.8s;
+}
+.btn_nav:hover
+{
+    /*  ----   animation   ---   */
+    background-color: darkgrey;
+}
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* --------------------Formulaire------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+form
+{
+    margin: 20px auto;
+    width: 60%;
+}
+
+.form_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+.form_line{
+    width: 100%;
+    display: flex;
+    margin : 3px 0;
+}
+.form_line label{
+    width: 30%;
+}
+.form_line input{
+    width : 70%;
+}
+.btn_submit_form{
+    width: 100%;
+    margin-top: 6px;
+}
+form legend{
+    font-weight: bold;
+}
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* --------------------Tableau Historique----------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+table
+{
+    border-spacing: 1;
+    border-collapse: collapse;
+
+    border-radius:10px;
+    overflow:hidden;
+    max-width:900px; 
+    width:100%;
+    margin:0 auto;
+    position:relative;
+
+}
+th, td {
+    padding-left: 8px;
+}
+thead tr
+{ 
+    height:60px;
+    background: slategrey;
+    color: whitesmoke;
+    font-weight:bold;
+}
+
+.row_item_is_still_borrowed {
+    background-color: rgb(255, 226, 226);
+}
+.row_item_is_back{
+    background-color: whitesmoke;
+}
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------ Footer ----------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+
+
+
